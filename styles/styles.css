@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+* {
+  color-scheme: dark !important;
+}
+
+body {
+  font-family: 'Inter' !important;
+  font-weight: 400 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter' !important;
+  font-weight: 700 !important;
+}
+
+html {
+  font-size: 100% !important;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 4.210rem !important;
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem !important;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem !important;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem !important;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem !important;
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem !important;
+  /* 12px */
+}
+
+li {
+  list-style-type: none;
+}
+
+#hero-section {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("/assets/cs2-hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95svh;
+  width: 100%;
+}
+
+#search-section {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("/assets/cs2-hero-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  height: 95svh;
+  width: 100%;
+}

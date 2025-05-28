@@ -1,0 +1,35 @@
+#dashboard-stats {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #E7E6E9;
+}
+
+#simple-details {
+    display: grid; 
+    grid-template-columns: repeat(1fr, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    place-self: center;
+    gap: 10px;
+}
+
+#stats {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.data-panel {
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 100%;
+    border: 1px solid rgba(8, 8, 8, 0.39);;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 350px;
+}

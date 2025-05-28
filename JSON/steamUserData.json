@@ -1,0 +1,26 @@
+{
+    "response": {
+        "players": [
+            {
+                "steamid": "76561198274029909",
+                "communityvisibilitystate": 3,
+                "profilestate": 1,
+                "personaname": "Swag Boss Jr",
+                "commentpermission": 1,
+                "profileurl": "https://steamcommunity.com/profiles/76561198274029909/",
+                "avatar": "https://avatars.steamstatic.com/37b2ba9f4d8ed55c8c4f8a71ce26532588f300f0.jpg",
+                "avatarmedium": "https://avatars.steamstatic.com/37b2ba9f4d8ed55c8c4f8a71ce26532588f300f0_medium.jpg",
+                "avatarfull": "https://avatars.steamstatic.com/37b2ba9f4d8ed55c8c4f8a71ce26532588f300f0_full.jpg",
+                "avatarhash": "37b2ba9f4d8ed55c8c4f8a71ce26532588f300f0",
+                "lastlogoff": 1745989111,
+                "personastate": 0,
+                "primaryclanid": "103582791462377653",
+                "timecreated": 1451694179,
+                "personastateflags": 0,
+                "loccountrycode": "CA",
+                "locstatecode": "ON",
+                "loccityid": 4816
+            }
+        ]
+    }
+}
