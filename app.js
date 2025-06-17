@@ -15,10 +15,11 @@ async function userSearch() {
     // let response1 = await fetch(userData_API_URL + value)
 
     let response = await fetch("http://127.0.0.1:5500/JSON/playerStats.json") // TESTING
-    let respoonse = await fetch("http://127.0.0.1:5500/JSON/steamUserData.json") // TESTING
+
+    // let respoonse = await fetch("http://127.0.0.1:5500/JSON/steamUserData.json") // TESTING
 
     userData = await response.json()
-    steamUserData = await response1.json()
+    // steamUserData = await response1.json() @TODO: Name's instead of steamID 
 
     // Stores data into local storage
     window.localStorage.setItem("userData", JSON.stringify(userData));
@@ -29,14 +30,17 @@ async function userSearch() {
 
 
 function displayChart(data) {
+    // user data variables 
     let username = document.querySelector("#username")
     let timePlayed = document.querySelector("#time")
     let kd = document.querySelector("#ratio")
 
-    // Local storage for fetched results
+    // Local storage for fetched results.
     let userData = JSON.parse(window.localStorage.getItem("userData"))
 
-    console.log(userData)
+    // Display kill death ratio 
+    let ratio = (userData.playerstats.stats[0].value / userData.playerstats.stats[1].value).toFixed(2)
+    kd.textContent = ratio
 
     // Canvas
     let myChart = document.querySelectorAll(".myChart");
@@ -64,8 +68,6 @@ function displayChart(data) {
             },
             options: {}
         });
-
-
     } else {
         console.error("Failed to acquire context from the canvas element.");
     }
