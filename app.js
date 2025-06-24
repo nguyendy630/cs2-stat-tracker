@@ -89,7 +89,7 @@ function displayChart(data) {
                             stats.total_kills_ak47,
                             stats.total_kills_deagle,
                             stats.total_kills_m4a1,
-                            stats.total_kills_m4a1,
+                            stats.total_kills_m4a1_s || 0, // Use 0 if not present
                             stats.total_kills_awp,
                         ], // Fixed data length
                     },
